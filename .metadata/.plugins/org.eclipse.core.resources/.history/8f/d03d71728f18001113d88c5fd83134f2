@@ -1,0 +1,24 @@
+package br.com.alura;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Funcionario funcionario1 = new Funcionario();
+		
+		funcionario1.nome = "Gerson Aparecido";
+		funcionario1.cargo = "Desenvolvedor";
+		funcionario1.salario = 9000;
+		
+		Funcionario funcionario2 = new Funcionario();
+		funcionario2.nome = "Joao";
+		funcionario2.cargo= "Desenvolvedor";
+		funcionario2.salario= 8500;
+
+		funcionario1.exibirInformacoes();
+		funcionario2.exibirInformacoes();
+		
+	}
+
+}
