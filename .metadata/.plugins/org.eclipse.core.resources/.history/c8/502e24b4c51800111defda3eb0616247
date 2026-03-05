@@ -15,9 +15,7 @@ public class Principal {
 		gerente.setBonus(1000);
 		
 		
-		Desenvolvedor desenvoldor = new Desenvolvedor("Cala", 8500, "Java");
-		
-		desenvoldor.exibirInformacoes();
+		Desenvolvedor desenvoldor = new Desenvolvedor("Cala", 8500, "Java")
 		
 	}
 

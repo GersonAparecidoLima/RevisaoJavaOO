@@ -10,14 +10,6 @@ public class Principal {
 		Gerente gerente = new Gerente("Pedro", 15000);
 		
 		gerente.exibirInformacoes();
-		gerente.reajustarSalario(2);
-		gerente.exibirInformacoes();
-		gerente.setBonus(1000);
-		
-		
-		Desenvolvedor desenvoldor = new Desenvolvedor("Cala", 8500, "Java");
-		
-		desenvoldor.exibirInformacoes();
 		
 	}
 
