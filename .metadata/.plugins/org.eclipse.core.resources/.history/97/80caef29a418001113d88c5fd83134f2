@@ -9,12 +9,10 @@ public class Principal {
 		
 		funcionario1.setNome("Desenvolvedor");
 		
-		//System.out.println("Funcionário tem o cargo: " + funcionario1.getNome());
-		
 		Funcionario funcionario2 = new Funcionario("Joao",8500);
 		
 		funcionario2.setNome("Desenvolvedor");
-		//System.out.println("Funcionário tem o cargo: " + funcionario2.getNome());
+		
 
 		funcionario1.exibirInformacoes();
 		funcionario1.reajustarSalario(7);

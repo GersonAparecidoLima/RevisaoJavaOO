@@ -7,14 +7,12 @@ public class Principal {
 
 		Funcionario funcionario1 = new Funcionario("Gerson Aparecido",9000);
 		
-		funcionario1.setNome("Desenvolvedor");
-		
-		//System.out.println("Funcionário tem o cargo: " + funcionario1.getNome());
+		funcionario1.cargo = "Desenvolvedor";
 		
 		Funcionario funcionario2 = new Funcionario("Joao",8500);
 		
-		funcionario2.setNome("Desenvolvedor");
-		//System.out.println("Funcionário tem o cargo: " + funcionario2.getNome());
+		funcionario2.cargo= "Desenvolvedor";
+		
 
 		funcionario1.exibirInformacoes();
 		funcionario1.reajustarSalario(7);
