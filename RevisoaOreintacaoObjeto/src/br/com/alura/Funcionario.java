@@ -1,11 +1,11 @@
 package br.com.alura;
 
-public class Funcionario {
+public abstract class Funcionario {
 	
-	private String nome;
+	protected String nome;
 	private String cargo;
-	private double salario;
-	private int controleReajuste = 0;
+	protected  double salario;
+	private  int controleReajuste = 0;
 	
 	
 	public Funcionario(String nome, double salario) {
@@ -18,6 +18,7 @@ public class Funcionario {
 	}
 	
 	
+
 	public void reajustarSalario(double percentual) {
 		
 		if (controleReajuste >= 1) {
@@ -29,6 +30,11 @@ public class Funcionario {
 
 		
 	}
+	
+	//um método abstrato só será implementado pelas classes filhas
+	public abstract void calcularPLR();
+		
+
 	
 	
 	

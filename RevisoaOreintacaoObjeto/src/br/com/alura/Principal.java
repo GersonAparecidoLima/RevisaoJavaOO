@@ -5,18 +5,20 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	// Gerente gerente = new Gerente("Mario", 15000);
 
-		Gerente gerente = new Gerente("Pedro", 15000);
+
+		//Gerente gerente = new Gerente("Pedro", 15000);
+		Funcionario gerente = new Gerente("Pedro", 15000);
 		
+		//Precisamos fazer um cast
+		((Gerente) gerente).setBonus(1000);
 		gerente.exibirInformacoes();
 		gerente.reajustarSalario(2);
 		gerente.exibirInformacoes();
-		gerente.setBonus(1000);
+
 		
 		
-		Desenvolvedor desenvoldor = new Desenvolvedor("Cala", 8500, "Java");
-		
+		Desenvolvedor desenvoldor = new Desenvolvedor("Cala", 8500, "Backend Java");
 		desenvoldor.exibirInformacoes();
 		
 	}

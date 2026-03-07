@@ -3,7 +3,7 @@ package br.com.alura;
 
 
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements Aprovador {
 
 	
 	
@@ -22,5 +22,30 @@ public class Gerente extends Funcionario {
 		super(nome, salario);
 		// TODO Auto-generated constructor stub
 	}
+
+	//Sobrescrevendo métodos
+	@Override
+	public void exibirInformacoes() {
+
+		//    System.out.printf("Gerente: %s - salário %.2f - bônus: %.2f", nome, salario, bonus);
+		System.out.printf("Gerente: %s - salário %.2f - bônus: %.2f\n", nome, salario, bonus );
+
+	}
+
+	@Override
+	public void calcularPLR() {
+		// classe abstrata serve como um modelo para que as subclasses herdem seus comportamentos e atributos. Os métodos abstratos 
+	    System.out.println("PLR do gerente");
+	}
+
+	@Override
+	public void aprovarProjeto(String nomeProjeto) {
+		// TODO Auto-generated method stub
+		 System.out.printf("\nGerente %s aprovou o projeto %s", nome, nomeProjeto);
+	}
+	
+	
+	
+	
 
 }
